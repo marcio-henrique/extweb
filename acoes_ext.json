@@ -20,36 +20,47 @@
       "quantidade_total": 700,
       "quantidade_ocupada": 500
     },
-    "programacao": {
-      "0": {
+    "programacao": [
+      {
         "data": "16/07/2019",
         "horario_inicial": "18:00",
         "horario_final": "22:00",
         "atividades": "Palestras acerca da política nacional de sangue e hemoderivados e a atuação do serviço social"
       }
-    },
+    ],
     "publico_alvo": "Estudantes",
     "carga_horaria": 4,
     "link_inscricao": "google.com",
-    "equipe": {
-      "0": {
+    "equipe": [
+      {
         "nome": "Fernanda Santos Bezerra",
         "categoria": "Discente",
         "funcao": "Palestrante",
         "e-mail": "feehsantos802@gmail.com"
       },
-      "1": {
+      {
         "nome": "Sthefany Raffaela Palagani",
         "categoria": "Discente",
         "funcao": "Palestrante",
         "e-mail": "tete_raffaela@hotmail.com"
       },
-      "2": {
+      {
         "nome": "Josimeire de Omena Leite",
         "categoria": "Docente",
         "funcao": "Coordenadora",
         "e-mail": "meireomena@hotmail.com"
       }
-    }
+    ],
+    "imagens": [
+      {
+        "link": "http://www.criatives.com.br/wp-content/uploads/2018/01/26755627_1356382461136968_1608361180_n.png"
+      },
+      {
+        "link": "https://www.criatives.com.br/wp-content/uploads/2018/01/26696925_1356381117803769_272771002_n.png"
+      },
+      {
+        "link": "https://img.buzzfeed.com/buzzfeed-static/static/2017-08/9/17/campaign_images/buzzfeed-prod-fastlane-03/13-provas-de-que-nao-ha-ninguem-mais-solteiro-que-2-21057-1502313426-0_dblbig.jpg"
+      }
+    ]
   }
 ]
