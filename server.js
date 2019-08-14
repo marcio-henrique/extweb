@@ -22,8 +22,8 @@ const homePageAbsolutePath = __dirname + "/views/index.html";
 app.get("/", (req, res) => res.sendFile(homePageAbsolutePath));
 
 // Serve the second page
-const secondPageAbsolutePath = __dirname + "/views/page_detalhes.html";
-app.get("/detalhes", (req, res) => res.sendFile(secondPageAbsolutePath));
+const secondPageAbsolutePath = __dirname + "/views/detalhes_acao.html";
+app.get("/detalhes_acao", (req, res) => res.sendFile(secondPageAbsolutePath));
 
 // Serve the projects list
 const projectsJson = fs.readFileSync("acoes_ext.json");

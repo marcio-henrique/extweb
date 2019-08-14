@@ -35,7 +35,7 @@
     <script src="jquery/jquery.min.js"></script>
     <!--<script src="tether/tether.min.js"></script>-->
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/client.js" defer></script>
+    <script src="js/detalhes_acao.js" defer></script>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -101,15 +101,15 @@
 
             <!-- Carousel Images -->
             <div id="carouselExampleIndicators" class="carousel slide w-80" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <ol class="carousel-indicators" id="slideList">
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
                 </ol>
                 <div class="carousel-inner" id="carrossel">
-                    <div class="carousel-item active">
+                    <!-- <div class="carousel-item active">
                         <img class="d-block w-100" src="http://placehold.it/1000x400" alt="First slide">
-                    </div>
+                    </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -120,29 +120,24 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-
             <hr>
 
-            <!-- Descriotion -->
             <div id="descricao">
                 <h2>Descrição</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam
-                    sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum
-                    minus inventore?</p>
+                <p id=txtDescricao style="text-align: justify;"></p>
             </div>
             <hr>
 
-            <div id="publico_alvo">
+            <div id="publicoAlvo">
                 <h2>Público Alvo</h2>
-                <ul>
-                    <li>Estudantes</li>
+                <ul id="listPublicoAlvo">
                 </ul>
             </div>
             <hr>
 
             <div id="localizacao">
                 <h2>Localização</h2>
-                <ul>
+                <ul id="listLocalizacao">
                     <li><b>Espaço:</b> Lorem ipsum dolor sit amet</li>
                     <li><b>Cidade/Estado:</b> Lorem ipsum dolor sit amet</li>
                 </ul>
@@ -151,7 +146,7 @@
 
             <div id="inscricao">
                 <h2>Inscrição</h2>
-                <ul>
+                <ul id="listInscricao">
                     <li><b>De:</b> 12/08/2019 <b>à</b> 12/08/2019</li>
                     <li><b>Vagas Disponíveis:</b> 1</li>
                     <li><b>Inscreva-se <a href="https://www.google.com">aqui</a></b></li>
@@ -170,7 +165,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                    <tr id="listCronograma">
                         <td>16/07/2019</td>
                         <td>18:00 às 22:00</td>
                         <td>Palestra</td>
@@ -181,18 +176,22 @@
             <hr>
 
             <div id="Contato">
-
+                <h2>Contato</h2>
+                <h5 id="nomeContato">Márcio</h5>
+                <ul id="listContato">
+                    <li><b>Categoria:</b> Discente</li>
+                    <li><b>Função:</b> 1</li>
+                    <li><b>E-mail: <a href="mailto:marcioh.ikke@gmail.com">marcioh.ikke@gmail.com</a></b></li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- /.container -->
 </div>
 <!-- Footer -->
 <footer class="py-5 bg-dark">
     <div class="">
         <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
     </div>
-    <!-- /.container -->
 </footer>
 
 </body>

@@ -28,7 +28,10 @@
         "atividades": "Palestras acerca da política nacional de sangue e hemoderivados e a atuação do serviço social"
       }
     ],
-    "publico_alvo": "Estudantes",
+    "publico_alvo": [
+        "Estudantes",
+        "Comunidade em geral"
+    ],
     "carga_horaria": 4,
     "link_inscricao": "google.com",
     "equipe": [
@@ -52,6 +55,9 @@
       }
     ],
     "imagens": [
+      {
+        "link": "/img/3.jpg"
+      },
       {
         "link": "http://www.criatives.com.br/wp-content/uploads/2018/01/26755627_1356382461136968_1608361180_n.png"
       },

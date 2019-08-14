@@ -9,6 +9,7 @@ fetch('/projetos')
                 console.log('error: ' + err);
             });
 
+            //set attributes from json to html with creating html elements
             appendProjectsData = (data) => {
                 data.forEach(projeto => {
                     const { titulo, tipo_curso, modalidade, resumo, area_principal,
@@ -16,35 +17,45 @@ fetch('/projetos')
                         programacao, publico_alvo, carga_horaria, link_inscricao, equipe,
                         imagens} = projeto;
 
+                    document.getElementById("titulo").innerText = titulo;
+
+                    document.getElementById("txtDescricao").innerText = resumo;
+
+                    //set images on carousel
                     const carousel = document.getElementById("carrossel");
-                    imagens.forEach(imagem => {
-                        var carr = document.createElement('div');
-                        carr.setAttribute('class', 'carousel-item');
-                        // if (i == 0)
-                        // {
-                        //     carr.setAttribute('class', 'active');
-                        // }
-                        var link = document.createElement('img');
-                        link.setAttribute('src', imagem.link);
-                        link.setAttribute('class', 'd-block w-100');
+                    const slide_list = document.getElementById("slideList");
+                    imagens.forEach((imagem, i) => {
+                        console.log(imagem.link);
+// <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        var carr = document.createElement("div");
+                        var slide = document.createElement("li");
+
+                        carr.classList.add("carousel-item");
+                        slide.setAttribute("data-target", "carouselExampleIndicators");
+                        slide.setAttribute("data-slide-to", i);
+                        
+                        if (i == 0)
+                        {
+                            carr.classList.add("active");
+                            slide.classList.add("active");
+                        }
+
+                        var link = document.createElement("img");
+                        link.setAttribute("src", imagem.link);
+                        link.setAttribute("height", 500);
+                        link.setAttribute("width", 1000);
+                        link.setAttribute("class", "d-block w-100");
 
                         carr.appendChild(link);
                         carousel.appendChild(carr);
+                        slide_list.appendChild(slide);
 
                     });
 
 
-// <div class="carousel-inner">
-//         <div class="carousel-item active">
-//         <img class="d-block w-100" src="http://placehold.it/1000x400" alt="First slide">
-//         </div>
-//         <div class="carousel-item">
-//         <img class="d-block w-100" src="http://placehold.it/1000x400" alt="Second slide">
-//         </div>
-//         <div class="carousel-item">
-//         <img class="d-block w-100" src="http://placehold.it/1000x400" alt="Third slide">
-//         </div>
-//         </div>
+                    publico_alvo.forEach(publico => {
+                        console.log(publico);
+                    });
 
                     // const b = document.createElement('b');
                     // const p1 = document.createElement('p');
@@ -61,7 +72,6 @@ fetch('/projetos')
                     // item.appendChild(p2);
                     // item.appendChild(p3);
 
-                    document.getElementById("titulo").innerText = titulo;
                     // document.getElementById("tipo_curso").innerText = tipo_curso;
                     // document.getElementById("modalidade").innerText = modalidade;
                     // document.getElementById("resumo").innerText = resumo;
