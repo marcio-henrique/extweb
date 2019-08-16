@@ -12,6 +12,7 @@ fetch('/projetos')
             //set attributes from json to html with creating html elements
             appendProjectsData = (data) => {
                 data.forEach(projeto => {
+
                     const { titulo, tipo_curso, modalidade, resumo, area_principal,
                         tipo_acao, local, espaco_realizacao, periodo_inscricao, vagas,
                         programacao, publico_alvo, carga_horaria, link_inscricao, equipe,
@@ -22,8 +23,8 @@ fetch('/projetos')
                     document.getElementById("txtDescricao").innerText = resumo;
 
                     //set images on carousel
-                    const carousel = document.getElementById("carrossel");
-                    const slide_list = document.getElementById("slideList");
+                    var carousel = document.getElementById("carrossel");
+                    var slide_list = document.getElementById("slideList");
                     imagens.forEach((imagem, i) => {
                         console.log(imagem.link);
 // <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
