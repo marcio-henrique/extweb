@@ -6,7 +6,7 @@
     "local": {
       "municipio": "Maceió",
       "estado": "Alagoas"
-    },
+    },    
     "espaco_realizacao": "Escola Estadual Geraldo Melo dos Santos",
     "tipo_curso": "Mini Curso",
     "modalidade": "Presencial",
@@ -33,40 +33,34 @@
         "Comunidade em geral"
     ],
     "carga_horaria": 4,
-    "link_inscricao": "google.com",
+    "link_inscricao": "https://www.google.com",
     "equipe": [
       {
         "nome": "Fernanda Santos Bezerra",
         "categoria": "Discente",
         "funcao": "Palestrante",
-        "e-mail": "feehsantos802@gmail.com"
+        "email": "feehsantos802@gmail.com"
       },
       {
         "nome": "Sthefany Raffaela Palagani",
         "categoria": "Discente",
         "funcao": "Palestrante",
-        "e-mail": "tete_raffaela@hotmail.com"
+        "email": "tete_raffaela@hotmail.com"
       },
       {
         "nome": "Josimeire de Omena Leite",
         "categoria": "Docente",
         "funcao": "Coordenadora",
-        "e-mail": "meireomena@hotmail.com"
+        "email": "meireomena@hotmail.com"
       }
     ],
     "imagens": [
       {
-        "link": "/img/3.jpg"
+        "link": "https://sciath.com.br/wp-content/uploads/2019/06/Doacao--1024x614.jpg"
       },
       {
-        "link": "http://www.criatives.com.br/wp-content/uploads/2018/01/26755627_1356382461136968_1608361180_n.png"
-      },
-      {
-        "link": "https://www.criatives.com.br/wp-content/uploads/2018/01/26696925_1356381117803769_272771002_n.png"
-      },
-      {
-        "link": "https://img.buzzfeed.com/buzzfeed-static/static/2017-08/9/17/campaign_images/buzzfeed-prod-fastlane-03/13-provas-de-que-nao-ha-ninguem-mais-solteiro-que-2-21057-1502313426-0_dblbig.jpg"
-      }
+        "link": "http://www.hemoam.am.gov.br/img_parceiros/hemoderivado.png"
+      }      
     ]
   }
 ]
